@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="gilroy.ttf">
+            <string>Gilroy-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="167" id="KGk-i7-Jjw" customClass="MenuModuleCell" customModule="Mellow_di" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Flo-fj-Mb4">
+                        <rect key="frame" x="0.0" y="0.0" width="408" height="270"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="126" id="5RK-At-qXj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f31-eW-V4R">
+                        <rect key="frame" x="20" y="20" width="127" height="28"/>
+                        <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaS-Lv-JrQ">
+                        <rect key="frame" x="20" y="241.5" width="372" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iY-RH-Tio">
+                        <rect key="frame" x="334" y="129" width="24" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0u-7o-SGb">
+                        <rect key="frame" x="0.0" y="0.0" width="408" height="275"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KaS-Lv-JrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3NL-r5-vYJ"/>
+                    <constraint firstItem="f31-eW-V4R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="5dO-zE-QEM"/>
+                    <constraint firstAttribute="trailing" secondItem="8iY-RH-Tio" secondAttribute="trailing" constant="50" id="7XV-s5-J4R"/>
+                    <constraint firstItem="Flo-fj-Mb4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9LF-hd-9RK"/>
+                    <constraint firstAttribute="trailing" secondItem="KaS-Lv-JrQ" secondAttribute="trailing" constant="16" id="NV8-c2-er1"/>
+                    <constraint firstAttribute="bottom" secondItem="W0u-7o-SGb" secondAttribute="bottom" id="PKM-4s-ja7"/>
+                    <constraint firstItem="W0u-7o-SGb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XGS-gh-2Gb"/>
+                    <constraint firstAttribute="bottom" secondItem="Flo-fj-Mb4" secondAttribute="bottom" constant="5" id="aAN-hN-Gk4"/>
+                    <constraint firstItem="Flo-fj-Mb4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="akJ-sN-YY6"/>
+                    <constraint firstAttribute="trailing" secondItem="Flo-fj-Mb4" secondAttribute="trailing" id="eO5-0f-6DR"/>
+                    <constraint firstAttribute="trailing" secondItem="W0u-7o-SGb" secondAttribute="trailing" id="hJR-yz-BnM"/>
+                    <constraint firstAttribute="bottom" secondItem="KaS-Lv-JrQ" secondAttribute="bottom" constant="16" id="lZg-HW-dIz"/>
+                    <constraint firstItem="f31-eW-V4R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="pSw-ln-7A6"/>
+                    <constraint firstItem="8iY-RH-Tio" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="roL-OH-ZPi"/>
+                    <constraint firstItem="W0u-7o-SGb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="snh-JU-SXy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="Flo-fj-Mb4" id="q0n-aU-7Zq"/>
+                <outlet property="descriptionLabel" destination="KaS-Lv-JrQ" id="hqL-nE-7cu"/>
+                <outlet property="durationLabel" destination="8iY-RH-Tio" id="ReT-Zl-7hW"/>
+                <outlet property="highlightView" destination="W0u-7o-SGb" id="eHj-LL-25C"/>
+                <outlet property="nameLabel" destination="f31-eW-V4R" id="y9T-zN-1dB"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="134.26339285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
